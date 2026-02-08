@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
 
 function Logg() {
@@ -46,7 +46,7 @@ function Logg() {
         <div className="mb-8">
           <img
             className="w-12 h-12"
-            src="/src/assets/pics/Spotify-Icon-Logo.wine.svg"
+            src="/Spotify-Icon-Logo.wine.svg"
             alt="Spotify Logo"
           />
         </div>
@@ -115,7 +115,7 @@ function Logg() {
 
            <div className="mt-8 pt-8 border-t border-[#292929] text-center">
               <p className="text-[#a7a7a7] text-sm mb-4">Don't have an account?</p>
-              <a href="/Signn" className="text-[#a7a7a7] hover:text-white hover:underline font-bold uppercase tracking-widest text-sm block">Sign up for Spotify</a>
+              <Link href="/Signn" className="text-[#a7a7a7] hover:text-white hover:underline font-bold uppercase tracking-widest text-sm block">Sign up for Spotify</Link>
            </div>
         </div>
       </div>
