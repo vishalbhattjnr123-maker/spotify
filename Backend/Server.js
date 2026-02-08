@@ -11,8 +11,7 @@ const Song = require("./models/Songs");
 const Artist = require("./models/Artist");
 const OTP = require("./models/OTP");
 
-const HOST = "127.0.0.1";
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(express.json());
@@ -378,6 +377,6 @@ app.get("/cover/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT, HOST, () =>
-  console.log(`🚀 Server running at http://${HOST}:${PORT}`)
+app.listen(PORT, () =>
+  console.log(`🚀 Server running at port ${PORT}`);
 );
