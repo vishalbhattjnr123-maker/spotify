@@ -17,7 +17,7 @@ function Navbar() {
       <div className="flex items-center gap-4">
         <Link to="/">
              <img
-            src="/src/assets/pics/Spotify-Icon-Logo.wine.svg"
+            src="/Spotify-Icon-Logo.wine.svg"
             alt="Spotify"
             className="w-8 h-8 md:w-10 md:h-10 object-contain invert spotifynew" 
           />
