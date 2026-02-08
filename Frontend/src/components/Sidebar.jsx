@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = "https://spotify-v5ue.onrender.com/";
+const API_URL = "https://spotify-v5ue.onrender.com";
 
 function Sidebar() {
   const [artists, setArtists] = useState([]);
