@@ -115,7 +115,7 @@ function Logg() {
 
            <div className="mt-8 pt-8 border-t border-[#292929] text-center">
               <p className="text-[#a7a7a7] text-sm mb-4">Don't have an account?</p>
-              <Link href="/Signn" className="text-[#a7a7a7] hover:text-white hover:underline font-bold uppercase tracking-widest text-sm block">Sign up for Spotify</Link>
+              <Link to="/Signn" className="text-[#a7a7a7] hover:text-white hover:underline font-bold uppercase tracking-widest text-sm block">Sign up for Spotify</Link>
            </div>
         </div>
       </div>
