@@ -15,8 +15,8 @@ export const PlayerProvider = ({ children }) => {
   const fetchAdjacentSongs = async (songId) => {
       try {
           const [n, p] = await Promise.all([
-             fetch(`http://127.0.0.1:5000/songs/${songId}/next`).then(res => res.ok ? res.json() : null),
-             fetch(`http://127.0.0.1:5000/songs/${songId}/previous`).then(res => res.ok ? res.json() : null)
+             fetch(`https://spotify-v5ue.onrender.com/songs/${songId}/next`).then(res => res.ok ? res.json() : null),
+             fetch(`https://spotify-v5ue.onrender.com/songs/${songId}/previous`).then(res => res.ok ? res.json() : null)
           ]);
           setNextSong(n);
           setPrevSong(p);
@@ -38,7 +38,7 @@ export const PlayerProvider = ({ children }) => {
     setPrevSong(null);
     
     // Audio source processing
-    const audioUrl = `http://127.0.0.1:5000/audio/${song._id}`;
+    const audioUrl = `https://spotify-v5ue.onrender.com/audio/${song._id}`;
     
     audioRef.current.src = audioUrl;
     audioRef.current.loop = isLooping; // Maintain loop state

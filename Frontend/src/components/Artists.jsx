@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://spotify-v5ue.onrender.com";
 
 function Artists() {
   const [artists, setArtists] = useState([]);

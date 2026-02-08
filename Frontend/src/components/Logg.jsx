@@ -5,7 +5,7 @@ import { useUser } from "../context/UserContext";
 function Logg() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState(""); 
-  const API_URL = "http://127.0.0.1:5000"; 
+  const API_URL = "https://spotify-v5ue.onrender.com"; 
   const navigate = useNavigate();
   const { login } = useUser();
 

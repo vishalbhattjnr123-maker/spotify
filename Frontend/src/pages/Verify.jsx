@@ -15,7 +15,7 @@ function Verify() {
     }
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/verify-otp", {
+      const res = await fetch("https://spotify-v5ue.onrender.com/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
@@ -29,7 +29,7 @@ function Verify() {
       }
 
       // ✅ OTP verified → create user
-      await fetch("http://127.0.0.1:5000/signup", {
+      await fetch("https://spotify-v5ue.onrender.com/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

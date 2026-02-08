@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useRef } from "react";
 import { usePlayer } from "../context/PlayerContext";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://spotify-v5ue.onrender.com";
 
 function Player() {
   const {
