@@ -37,7 +37,7 @@ function Signn() {
       console.log(`[DEBUG] Frontend Requesting OTP - User: ${username}, Pass: ${password}`);
 
       // 1. Request OTP from Backend
-      const response = await fetch("http://localhost:5000/send-otp", {
+      const response = await fetch("https://spotify-v5ue.onrender.com/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, username, password }),
@@ -86,7 +86,7 @@ function Signn() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/verify-otp", {
+      const response = await fetch("https://spotify-v5ue.onrender.com/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
